@@ -15,7 +15,7 @@ RUN npm install
 COPY ./frontend ./
 
 # Copy the .env file to the image
-COPY .env ./.env
+# COPY .env ./.env
 
 RUN npm run build
 
