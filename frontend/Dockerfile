@@ -8,7 +8,6 @@ LABEL Developers="Curlybytes,DevLeoko"
 # The WORKDIR instruction sets the working directory for everything that will happen next
 WORKDIR /app
 COPY ./frontend/package.json ./
-COPY ./frontend/package-lock.json ./
 RUN npm install
 
 # Copy all local files into the image
